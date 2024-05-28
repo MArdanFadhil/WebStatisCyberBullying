@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+    background-color: #2A629A;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 15px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ddd;
+}
+
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.teks1 {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+img {
+    padding: 0 120px;
+}
+
+
+/* CSS untuk animasi */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInFromLeft 0.5s ease-out;
+}
+
